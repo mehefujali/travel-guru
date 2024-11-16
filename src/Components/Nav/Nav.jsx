@@ -18,10 +18,10 @@ const Nav = () => {
                                           <ul
                                                 tabIndex={0}
                                                 className="menu menu-sm dropdown-content bg-white text-black rounded   z-[1] mt-3 w-52 p-2 shadow">
-                                                <NavLink to={'/news'}>News</NavLink>
-                                                <NavLink to={'/destination'}>Destination</NavLink>
-                                                <NavLink to={'/blog'}>Blog</NavLink>
-                                                <NavLink to={'/content'}>Contact</NavLink>
+                                                <NavLink >News</NavLink>
+                                                <NavLink >Destination</NavLink>
+                                                <NavLink>Blog</NavLink>
+                                                <NavLink >Contact</NavLink>
                                           </ul>
                                     </div>
                                     <Link to={'/home'}>
@@ -33,17 +33,17 @@ const Nav = () => {
                                           <FaSearch className=' absolute top-1/4 left-2 cursor-pointer'></FaSearch>
                                           <input
                                                 placeholder='Search your Destination...'
-                                                type="text" className={`input  input-sm  w-36 xl:w-96 px-8 md:px-10 bg-white bg-opacity-15 ${pathname.includes('/home')?'border-white':'border-black'} border-white rounded border focus:border-white `} name="" id="" />
+                                                type="text" className={`input  input-sm  w-36 xl:w-96 px-8 md:px-10 bg-white bg-opacity-15 ${pathname.includes('/home') ? 'border-white' : 'borderbl'} border-white rounded border focus:border-white `} name="" id="" />
                                     </div>
                               </div>
 
                               <div className="navbar-end">
                                     <div className="navbar-center hidden lg:flex">
                                           <ul className="menu menu-horizontal px-1 gap-3 xl:gap-8 mr-8">
-                                                <NavLink to={'/news'}>News</NavLink>
-                                                <NavLink to={'/destination'}>Destination</NavLink>
-                                                <NavLink to={'/blog'}>Blog</NavLink>
-                                                <NavLink to={'/content'}>Contact</NavLink>
+                                                <NavLink >News</NavLink>
+                                                <NavLink >Destination</NavLink>
+                                                <NavLink>Blog</NavLink>
+                                                <NavLink >Contact</NavLink>
                                           </ul>
                                     </div>
                                     <Link to={'/login'} className="btn btn-sm md:btn-md bg-[#F9A51A] text-black hover:bg-[#da8e16] border-none rounded md:px-8">Login</Link>

@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import './slider.css'
 import { useEffect, useState } from "react";
 import DestinaionCard from "../../Components/DestinationCard/DestinaionCard";
+// import { AuthContext } from "../../Context/AuthProvider";
 
 
 const Home = () => {
@@ -14,7 +15,8 @@ const Home = () => {
                   .then(data => setDestination(data))
       }, [])
       
-
+      
+    
       const sliderSetting = {
 
             adaptiveHeight: true,
