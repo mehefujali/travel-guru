@@ -13,7 +13,7 @@ const Home = () => {
                   .then(res => res.json())
                   .then(data => setDestination(data))
       }, [])
-      console.log(destinations);
+      
 
       const sliderSetting = {
 

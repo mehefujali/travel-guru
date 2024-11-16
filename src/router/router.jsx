@@ -5,6 +5,7 @@ import News from "../Pages/News/News";
 import Blog from "../Pages/Blog/Blog";
 import Content from "../Pages/Content/Content";
 import Destination from "../Pages/Destination/Destination";
+import DestinationDetails from "../Components/DestinationDetails/DestinationDetails";
 
 const router = createBrowserRouter([
       {
@@ -34,6 +35,11 @@ const router = createBrowserRouter([
                   {
                         path: 'destination',
                         element: <Destination></Destination>
+                  },
+                  {
+                        path: 'home/destination/:id',
+                        loader: ()=>  fetch('/destinations.json')          ,
+                        element:<DestinationDetails></DestinationDetails>
                   }
             ]
       }
