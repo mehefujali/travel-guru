@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import Root from "../Pages/Root";
 import Home from "../Pages/Home/Home";
 import News from "../Pages/News/News";
@@ -12,7 +12,11 @@ const router = createBrowserRouter([
             element: <Root></Root>,
             children: [
                   {
-                        path: '/',
+                        path:'/',
+                        element: <Navigate to={'/home'} replace></Navigate>
+                  },
+                  {
+                        path: '/home',
                         element: <Home></Home>
                   },
                   {
