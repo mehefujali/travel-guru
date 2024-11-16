@@ -1,8 +1,19 @@
+import { useContext } from "react";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
+import { AuthContext } from "../../Context/AuthProvider";
 
 
 const Login = () => {
+      const {googleSignIn,setUser,user} = useContext(AuthContext)
+      const handleGoogleSignIn = () => {
+            googleSignIn()
+            .then(user => setUser(user.user))
+            .catch(err => console.log(err))
+      }
+      if(user){
+            return <Navigate to={'/home'}></Navigate>
+      }
       return (
             <div>
                   <div className=" flex justify-center h-[100vh] items-center">
@@ -30,7 +41,7 @@ const Login = () => {
                               <p className=" mt-2 text-center"> Don’t have an account? <Link to={'/register'} className=" underline text-yellow-500">Create an account</Link></p>
                               <div className=" divider">OR</div>
                               <div className=" text-3xl justify-center flex items-center gap-2 text-[#F9A51A]">
-                              <FaGoogle  className=" cursor-pointer"></FaGoogle>
+                              <FaGoogle onClick={handleGoogleSignIn}  className=" cursor-pointer"></FaGoogle>
                               <FaFacebook className=" cursor-pointer"></FaFacebook>
                               </div>
                           </div>

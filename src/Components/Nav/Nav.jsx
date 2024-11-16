@@ -2,9 +2,11 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from '../../assets/images/icons/logo.png'
 import './nav.css'
 import { FaBars, FaSearch } from 'react-icons/fa';
+import { useContext } from 'react';
+import { AuthContext } from '../../Context/AuthProvider';
 const Nav = () => {
       const { pathname } = useLocation()
-
+       const {user} = useContext(AuthContext)
 
       return (
             <div className=' container mx-auto'>
@@ -46,7 +48,11 @@ const Nav = () => {
                                                 <NavLink >Contact</NavLink>
                                           </ul>
                                     </div>
-                                    <Link to={'/login'} className="btn btn-sm md:btn-md bg-[#F9A51A] text-black hover:bg-[#da8e16] border-none rounded md:px-8">Login</Link>
+                                    {
+                                            user? <div>
+                                                <h1>{user?.displayName}</h1>
+                                            </div>:<Link to={'/login'} className="btn btn-sm md:btn-md bg-[#F9A51A] text-black hover:bg-[#da8e16] border-none rounded md:px-8">Login</Link>
+                                    }
                               </div>
                         </div>
                   </div>
