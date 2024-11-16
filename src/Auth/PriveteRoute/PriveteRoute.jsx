@@ -14,7 +14,7 @@ const PriveteRoute = ({children}) => {
       }
       if(loading){
             return <div className=" w-full h-[100vh]">
-              <span className="loading fixed top-1/2 loading-spinner loading-lg"></span>
+              <span className="loading fixed top-1/2 left-1/2 loading-spinner loading-lg"></span>
             </div>
       }
       return (
