@@ -46,7 +46,7 @@ const Nav = () => {
                                                 <NavLink to={'/content'}>Contact</NavLink>
                                           </ul>
                                     </div>
-                                    <a className="btn btn-sm md:btn-md bg-[#F9A51A] text-black hover:bg-[#da8e16] border-none rounded md:px-8">Login</a>
+                                    <Link to={'/login'} className="btn btn-sm md:btn-md bg-[#F9A51A] text-black hover:bg-[#da8e16] border-none rounded md:px-8">Login</Link>
                               </div>
                         </div>
                   </div>
