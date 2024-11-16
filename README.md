@@ -30,7 +30,7 @@ Welcome to **Travel Guru**, your ultimate travel companion! 🗺️ A beautifull
 
 ## 📸 **Preview**  
 
-![Travel Guru Preview](https://via.placeholder.com/800x400?text=Travel+Guru+Preview)  
+<img src="https://i.ibb.co/94s8V9x/image.png">
 
 ---
 
