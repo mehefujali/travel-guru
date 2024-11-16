@@ -1,9 +1,10 @@
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from '../../assets/images/icons/logo.png'
 import './nav.css'
-import { FaBars, FaSearch } from 'react-icons/fa';
+import { FaBars, FaSearch, FaSignOutAlt, FaUser } from 'react-icons/fa';
 import { useContext } from 'react';
 import { AuthContext } from '../../Context/AuthProvider';
+import { FaGear } from 'react-icons/fa6';
 const Nav = () => {
       const { pathname } = useLocation()
       const { user,userSignOut } = useContext(AuthContext)
@@ -38,7 +39,7 @@ const Nav = () => {
                                           <FaSearch className=' absolute top-1/4 left-2 cursor-pointer'></FaSearch>
                                           <input
                                                 placeholder='Search your Destination...'
-                                                type="text" className={`input  input-sm  w-36 xl:w-96 px-8 md:px-10 bg-white bg-opacity-15 ${pathname.includes('/home') ? 'border-white' : 'borderbl'} border-white rounded border focus:border-white `} name="" id="" />
+                                                type="text" className={`input  input-sm  w-36 xl:w-96 px-8 md:px-10 bg-white bg-opacity-15 ${pathname.includes('/home') ? 'border-white' : 'border-black'}  rounded border focus:border-white `} name="" id="" />
                                     </div>
                               </div>
 
@@ -63,15 +64,15 @@ const Nav = () => {
                                                       </div>
                                                       <ul
                                                             tabIndex={0}
-                                                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black">
+                                                            className={`menu menu-sm dropdown-content bg-white bg-opacity-20 backdrop-blur-xl rounded z-[1] mt-3 w-52 p-2 shadow text-black ${pathname.includes('/home')?'text-white':'text-black'}`}>
                                                             <li>
-                                                                  <a className="justify-between">
-                                                                        Profile
-                                                                        <span className="badge">New</span>
+                                                                  <a className="">
+                                                                      <FaUser></FaUser>  Profile
+                                                                        
                                                                   </a>
                                                             </li>
-                                                            <li><a>Settings</a></li>
-                                                            <li onClick={handleLogOut}><a>Logout</a></li>
+                                                            <li><a><FaGear></FaGear> Settings</a></li>
+                                                            <li onClick={handleLogOut}><a><FaSignOutAlt></FaSignOutAlt> Logout</a></li>
                                                       </ul>
                                                 </div>
                                           

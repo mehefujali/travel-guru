@@ -1,10 +1,13 @@
 import { useContext } from "react";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate, useLocation } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
 
 
 const Login = () => {
+      const {state} = useLocation()
+     
+      
       const {googleSignIn,setUser,user} = useContext(AuthContext)
       const handleGoogleSignIn = () => {
             googleSignIn()
@@ -12,7 +15,7 @@ const Login = () => {
             .catch(err => console.log(err))
       }
       if(user){
-            return <Navigate to={'/home'}></Navigate>
+            return <Navigate to={state||'/home'}></Navigate>
       }
       return (
             <div>
