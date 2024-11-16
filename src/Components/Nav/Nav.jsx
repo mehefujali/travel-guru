@@ -8,7 +8,7 @@ const Nav = () => {
 
       return (
             <div className=' container mx-auto'>
-                  <div className=' w-11/12 mx-auto'>
+                  <div className=' w-11/12 mx-auto md:w-full'>
                         <div className={`navbar bg-transparent ${pathname.includes('/home') ? 'text-white' : "text-black"}`}>
                               <div className="navbar-start">
                                     <div className="dropdown">
@@ -17,7 +17,7 @@ const Nav = () => {
                                           </div>
                                           <ul
                                                 tabIndex={0}
-                                                className="menu menu-sm dropdown-content bg-white text-black rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                                className="menu menu-sm dropdown-content bg-white text-black rounded   z-[1] mt-3 w-52 p-2 shadow">
                                                 <NavLink to={'/news'}>News</NavLink>
                                                 <NavLink to={'/destination'}>Destination</NavLink>
                                                 <NavLink to={'/blog'}>Blog</NavLink>
@@ -33,7 +33,7 @@ const Nav = () => {
                                           <FaSearch className=' absolute top-1/4 left-2 cursor-pointer'></FaSearch>
                                           <input
                                                 placeholder='Search your Destination...'
-                                                type="text" className='input input-sm  w-36 xl:w-96 px-8 md:px-10 bg-white bg-opacity-15 border-white rounded border focus:border-white ' name="" id="" />
+                                                type="text" className='input  input-sm  w-36 xl:w-96 px-8 md:px-10 bg-white bg-opacity-15 border-white rounded border focus:border-white ' name="" id="" />
                                     </div>
                               </div>
 
