@@ -1,38 +1,39 @@
 [
       {
-            "id": 1,
-            "placeName": "Taj Mahal",
-            "image": "https://images.pexels.com/photos/7263897/pexels-photo-7263897.jpeg?cs=srgb&dl=pexels-rachel-claire-7263897.jpg&fm=jpg",
-            "description": "A symbol of love and one of the Seven Wonders of the World, located in Agra, Uttar Pradesh."
+        "id": 1,
+        "placeName": "Taj Mahal",
+        "image": "https://images.pexels.com/photos/7263897/pexels-photo-7263897.jpeg?cs=srgb&dl=pexels-rachel-claire-7263897.jpg&fm=jpg",
+        "description": "The Taj Mahal is a UNESCO World Heritage Site and one of the most visited places in India. Built by Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, it is a symbol of eternal love. This white marble mausoleum is surrounded by lush gardens and a reflecting pool that enhances its beauty. Located in Agra, Uttar Pradesh, it is a must-visit for both domestic and international travelers."
       },
       {
-            "id": 2,
-            "placeName": "Jaipur - Pink City",
-            "image": "https://media.cnn.com/api/v1/images/stellar/prod/180221121711-victor-cheng-pink-city.jpg?q=w_1110,c_fill",
-            "description": "Famous for its stunning forts, palaces, and vibrant culture, Jaipur is the capital of Rajasthan."
+        "id": 2,
+        "placeName": "Jaipur - Pink City",
+        "image": "https://media.cnn.com/api/v1/images/stellar/prod/180221121711-victor-cheng-pink-city.jpg?q=w_1110,c_fill",
+        "description": "Jaipur, the capital of Rajasthan, is known as the Pink City for its distinct terracotta-colored buildings. The city is home to magnificent forts like Amber Fort and Nahargarh Fort, and iconic landmarks such as the Hawa Mahal and City Palace. Jaipur offers a rich cultural experience, vibrant markets, and delicious Rajasthani cuisine. It's a blend of historical grandeur and modern charm that attracts visitors from around the world."
       },
       {
-            "id": 3,
-            "placeName": "Goa Beaches",
-            "image": "https://housing.com/news/wp-content/uploads/2023/08/1.jpg",
-            "description": "Known for its golden beaches, nightlife, and Portuguese heritage, Goa is a top tourist destination."
+        "id": 3,
+        "placeName": "Goa Beaches",
+        "image": "https://housing.com/news/wp-content/uploads/2023/08/1.jpg",
+        "description": "Goa, India's smallest state, is famous for its stunning beaches, lively nightlife, and Portuguese heritage. From the bustling shores of Baga Beach to the serene vibe of Palolem Beach, there’s something for everyone. Goa also offers adventure activities like water sports, dolphin spotting, and parasailing. Its unique culture is a blend of Indian and Western influences, making it an unforgettable destination."
       },
       {
-            "id": 4,
-            "placeName": "Kashmir - Paradise on Earth",
-            "image": "https://static.toiimg.com/photo/75358675/75358675.jpg",
-            "description": "A breathtaking destination with lush valleys, serene lakes, and snow-capped mountains in Jammu and Kashmir."
+        "id": 4,
+        "placeName": "Kashmir - Paradise on Earth",
+        "image": "https://static.toiimg.com/photo/75358675/75358675.jpg",
+        "description": "Kashmir, often referred to as 'Paradise on Earth,' is a breathtaking destination in northern India. Known for its snow-capped mountains, lush valleys, and serene Dal Lake, it is a haven for nature lovers. Tourists can enjoy a Shikara ride on the lake, visit the Mughal gardens, or experience the thrill of skiing in Gulmarg. The warm hospitality of the locals and the region’s rich culture make it a memorable experience."
       },
       {
-            "id": 5,
-            "placeName": "Kerala Backwaters",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/House_Boat_DSW.jpg/1200px-House_Boat_DSW.jpg",
-            "description": "A tranquil network of canals and lagoons, perfect for houseboat cruises and Ayurvedic retreats in Kerala."
+        "id": 5,
+        "placeName": "Kerala Backwaters",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/House_Boat_DSW.jpg/1200px-House_Boat_DSW.jpg",
+        "description": "Kerala, often called 'God’s Own Country,' is famous for its tranquil backwaters. The backwaters are a network of serene canals, rivers, and lagoons, best experienced on a traditional houseboat cruise. Visitors can enjoy the lush greenery, exotic wildlife, and the unique lifestyle of the local communities. Kerala also offers Ayurvedic retreats, making it a perfect destination for relaxation and rejuvenation."
       },
       {
-            "id": 6,
-            "placeName": "Meghalaya - Living Root Bridges",
-            "image": "https://www.travelcontentcreators.com/content/images/2023/11/living-root-bridge.jpg",
-            "description": "Explore the unique living root bridges, lush green landscapes, and waterfalls of Meghalaya."
+        "id": 6,
+        "placeName": "Meghalaya - Living Root Bridges",
+        "image": "https://www.travelcontentcreators.com/content/images/2023/11/living-root-bridge.jpg",
+        "description": "Meghalaya, the 'Abode of Clouds,' is known for its stunning living root bridges created by indigenous Khasi and Jaintia tribes. These natural bridges, made from the roots of rubber trees, are a marvel of bioengineering. The region is also home to misty landscapes, cascading waterfalls, and dense forests. A trek to these bridges offers a unique experience, blending adventure with the beauty of nature."
       }
-]
+    ]
+    
