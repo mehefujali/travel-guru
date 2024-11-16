@@ -6,8 +6,11 @@ import { useContext } from 'react';
 import { AuthContext } from '../../Context/AuthProvider';
 const Nav = () => {
       const { pathname } = useLocation()
-       const {user} = useContext(AuthContext)
-
+      const { user,userSignOut } = useContext(AuthContext)
+      const handleLogOut = () => {
+            userSignOut()
+            .then(console.log('signout success'))
+      }
       return (
             <div className=' container mx-auto'>
                   <div className=' w-11/12 mx-auto md:w-full'>
@@ -49,14 +52,35 @@ const Nav = () => {
                                           </ul>
                                     </div>
                                     {
-                                            user? <div>
-                                                <h1>{user?.displayName}</h1>
+                                          user ? <div>
+                                                <div className="dropdown dropdown-end">
+                                                      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                                            <div className="w-10 rounded-full">
+                                                                  <img
+                                                                        alt={user.displayName}
+                                                                        src={user.photoURL} />
+                                                            </div>
+                                                      </div>
+                                                      <ul
+                                                            tabIndex={0}
+                                                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black">
+                                                            <li>
+                                                                  <a className="justify-between">
+                                                                        Profile
+                                                                        <span className="badge">New</span>
+                                                                  </a>
+                                                            </li>
+                                                            <li><a>Settings</a></li>
+                                                            <li onClick={handleLogOut}><a>Logout</a></li>
+                                                      </ul>
+                                                </div>
+                                          
                                             </div>:<Link to={'/login'} className="btn btn-sm md:btn-md bg-[#F9A51A] text-black hover:bg-[#da8e16] border-none rounded md:px-8">Login</Link>
                                     }
-                              </div>
                         </div>
                   </div>
             </div>
+            </div >
       );
 };
 

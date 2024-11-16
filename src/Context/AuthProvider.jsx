@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from "firebase/auth";
 import PropTypes from "prop-types";
 import { createContext, useEffect, useState } from "react";
 import { auth } from "../Firebase/firebase.config";
@@ -11,6 +11,9 @@ const AuthProvider = ({ children }) => {
       const googleSignIn = () => {
             return signInWithPopup(auth, googleProvider)
       }
+      const userSignOut = () => {
+            return signOut(auth)
+      }
       useEffect(() => {
             const unSubscribe = onAuthStateChanged(auth, (curentuser) => {
                   setUser(curentuser)
@@ -21,6 +24,7 @@ const AuthProvider = ({ children }) => {
             googleSignIn,
             user,
             setUser,
+            userSignOut,
       }
       
       
