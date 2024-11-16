@@ -6,8 +6,7 @@ const DestinationDetails = () => {
       const { id } = useParams()
       const data = useLoaderData()
       const filter = data.find(destination => destination.id === parseInt(id))
-      console.log(filter);
-
+   
 
 
       return (
