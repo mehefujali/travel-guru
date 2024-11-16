@@ -4,10 +4,11 @@ import Nav from "../Components/Nav/Nav";
 
 const Root = () => {
       return (
-            <div className=" relative">
+            <div>
                   <nav className=" w-full  absolute ">
-                       <Nav></Nav>
-                       </nav>
+                        <Nav></Nav>
+                  </nav>
+
                   <Outlet></Outlet>
             </div>
       );

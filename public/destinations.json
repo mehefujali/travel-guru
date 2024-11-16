@@ -1,0 +1,38 @@
+[
+      {
+            "id": 1,
+            "placeName": "Taj Mahal",
+            "image": "https://images.pexels.com/photos/7263897/pexels-photo-7263897.jpeg?cs=srgb&dl=pexels-rachel-claire-7263897.jpg&fm=jpg",
+            "description": "A symbol of love and one of the Seven Wonders of the World, located in Agra, Uttar Pradesh."
+      },
+      {
+            "id": 2,
+            "placeName": "Jaipur - Pink City",
+            "image": "https://media.cnn.com/api/v1/images/stellar/prod/180221121711-victor-cheng-pink-city.jpg?q=w_1110,c_fill",
+            "description": "Famous for its stunning forts, palaces, and vibrant culture, Jaipur is the capital of Rajasthan."
+      },
+      {
+            "id": 3,
+            "placeName": "Goa Beaches",
+            "image": "https://housing.com/news/wp-content/uploads/2023/08/1.jpg",
+            "description": "Known for its golden beaches, nightlife, and Portuguese heritage, Goa is a top tourist destination."
+      },
+      {
+            "id": 4,
+            "placeName": "Kashmir - Paradise on Earth",
+            "image": "https://static.toiimg.com/photo/75358675/75358675.jpg",
+            "description": "A breathtaking destination with lush valleys, serene lakes, and snow-capped mountains in Jammu and Kashmir."
+      },
+      {
+            "id": 5,
+            "placeName": "Kerala Backwaters",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/House_Boat_DSW.jpg/1200px-House_Boat_DSW.jpg",
+            "description": "A tranquil network of canals and lagoons, perfect for houseboat cruises and Ayurvedic retreats in Kerala."
+      },
+      {
+            "id": 6,
+            "placeName": "Meghalaya - Living Root Bridges",
+            "image": "https://www.travelcontentcreators.com/content/images/2023/11/living-root-bridge.jpg",
+            "description": "Explore the unique living root bridges, lush green landscapes, and waterfalls of Meghalaya."
+      }
+]

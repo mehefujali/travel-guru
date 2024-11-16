@@ -8,6 +8,9 @@ export default {
     extend: {
       backgroundImage:{
         homeBg: 'url(../../src/assets/images/Rectangle 1.png)'
+      },
+      fontFamily:{
+        bebes: '"Bebas Neue", sans-serif'
       }
     },
   },
