@@ -13,7 +13,7 @@ const DestinationDetails = () => {
       return (
             <PriveteRoute>
                   <div>
-                        <div className=" pt-20 md:pt-0  md:h-[100vh] bg-homeBg bg-[#000000cc] bg-blend-multiply bg-cover items-center justify-center flex">
+                        <div className=" pt-20 lg:pt-0  lg:h-[100vh] bg-homeBg bg-[#000000cc] bg-blend-multiply bg-cover items-center justify-center flex">
 
                               <div className=" container  mx-auto w-10/12  xl:w-full justify-center items-center   ">
                                     <div className=" flex flex-col md:flex-row justify-between">
