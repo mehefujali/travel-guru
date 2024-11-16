@@ -33,7 +33,7 @@ const Nav = () => {
                                           <FaSearch className=' absolute top-1/4 left-2 cursor-pointer'></FaSearch>
                                           <input
                                                 placeholder='Search your Destination...'
-                                                type="text" className='input  input-sm  w-36 xl:w-96 px-8 md:px-10 bg-white bg-opacity-15 border-white rounded border focus:border-white ' name="" id="" />
+                                                type="text" className={`input  input-sm  w-36 xl:w-96 px-8 md:px-10 bg-white bg-opacity-15 ${pathname.includes('/home')?'border-white':'border-black'} border-white rounded border focus:border-white `} name="" id="" />
                                     </div>
                               </div>
 
