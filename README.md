@@ -38,4 +38,4 @@ Welcome to **Travel Guru**, your ultimate travel companion! 🗺️ A beautifull
 
 ### 1️⃣ Clone the repository:
 ```bash
-git clone https://github.com/yourusername/travel-guru.git
+git clone https://github.com/mehefujali/travel-guru.git
